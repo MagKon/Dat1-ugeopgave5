@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+class Main {
+    +main()
+}
+
+class Car {
+    -boolean make
+    -String model
+    -int year
+    -String bodyStyle
+    -Driver driver
+
+    +Car(boolean make, String model, int year, String bodyStyle, Driver driver)
+    +boolean isMake()
+    +void setMake(boolean make)
+    +String getModel()
+    +void setModel(String model)
+    +int getYear()
+    +void setYear(int year)
+    +String getBodyStyle()
+    +void setBodyStyle(String bodyStyle)
+    +Driver getDriver()
+    +void setDriver(Driver driver)
+    +@Override String toString()
+}
+class Driver {
+    -String name
+    -int age
+
+    +Driver(String name, int age)
+    +String getName()
+    +void setName(String name)
+    +int getAge()
+    +void setAge(int age)
+    +@Override String toString()
+}
+
+Main *- Car
+Car *- Driver
+
+@enduml
