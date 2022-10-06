@@ -8,27 +8,20 @@ class Main {
 }
 
 class Building {
-    -ArrayList<Room> rooms
-    -int numberOfBathrooms
-    -int numberOfFloors
-    -boolean isOfficeBuilding
+    -ArrayList<Room> rooms «get»
+    -int numberOfBathrooms «get»
+    -int numberOfFloors «get»
+    -boolean isOfficeBuilding «get»
 
     +Building(ArrayList<Room> rooms, int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuilding)
-    +ArrayList<Room> getRooms()
-    +int getNumberOfBathrooms()
-    +int getNumberOfFloors()
-    +boolean isOfficeBuilding()
 }
 
 class Room {
-    -int numberOfDoors
-    -int numberOfLamps
-    -int numberOfWindows
+    -int numberOfDoors «get»
+    -int numberOfLamps «get»
+    -int numberOfWindows «get»
 
     +Room(int numberOfDoors, int numberOfLamps, int numberOfWindows)
-    +int getNumberOfDoors()
-    +int getNumberOfLamps()
-    +int getNumberOfWindows()
 }
 
 Main *-- Building
