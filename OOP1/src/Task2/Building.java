@@ -3,7 +3,7 @@ package Task2;
 import java.util.ArrayList;
 
 public class Building {
-    private ArrayList<Room> rooms;
+    private final ArrayList<Room> rooms;
     private int numberOfBathrooms;
     private int numberOfFloors;
     private boolean isOfficeBuilding;
