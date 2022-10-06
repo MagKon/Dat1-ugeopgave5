@@ -2,7 +2,7 @@
 'https://plantuml.com/object-diagram
 
 class Main {
-    +void main()
+
 }
 
 class Car {

@@ -2,7 +2,6 @@
 'https://plantuml.com/object-diagram
 
 class Main {
-    +void main()
     +int countLampsInBuilding(Building building)
     +boolean isNormalBuilding(Building building)
 }
